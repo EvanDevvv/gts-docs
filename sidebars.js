@@ -22,8 +22,11 @@ const sidebars = {
     'spawner/index',
     {
       type: 'category',
-      label: 'Tutorial',
-      items: ['spawner/index'],
+      label: 'Setup',
+      items: [
+        'spawner/addingbuses',
+        'spawner/configuration'
+      ],
     },
   ],
 };

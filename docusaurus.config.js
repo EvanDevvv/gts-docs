@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'GTS Assets',
   tagline: 'Welcome to GTS Assets!',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/image1.png',
 
   // Set the production url of your site here
   url: 'https://github.com',
@@ -105,16 +105,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Roblox Group',
+                href: 'https://www.roblox.com/groups/16838109/GTS-Assets#!/about',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://discord.gg/5k85S4KWSR',
               },
             ],
           },
@@ -127,12 +123,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/EvanDevvv',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} GTS Assets.`,
       },
       prism: {
         theme: lightCodeTheme,
