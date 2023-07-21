@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[285],{2115:s=>{s.exports=JSON.parse('[{"label":"plugin","permalink":"/gts-docs/blog/tags/plugin","count":1},{"label":"speccer","permalink":"/gts-docs/blog/tags/speccer","count":1},{"label":"buses","permalink":"/gts-docs/blog/tags/buses","count":1}]')}}]);
