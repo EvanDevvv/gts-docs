@@ -65,15 +65,26 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'dropdown',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
+            items: [
+              {
+                type: 'docSidebar',
+                label: 'Basic Spawner',
+                sidebarId: 'spawner',
+              },
+            ]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://www.roblox.com/groups/16838109/GTS-Assets#!/about',
+            label: 'Roblox Group',
+            position: 'right',
+          },
+          {
+            href: 'https://discord.gg/5k85S4KWSR',
+            label: 'Discord Server',
             position: 'right',
           },
         ],
