@@ -52,6 +52,19 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+        language: "en",
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -73,6 +86,11 @@ const config = {
                 type: 'docSidebar',
                 label: 'Basic Spawner',
                 sidebarId: 'spawner',
+              },
+              {
+                type: 'docSidebar',
+                label: 'Auto Speccer',
+                sidebarId: 'autospec',
               },
             ]
           },
@@ -96,8 +114,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Bus Spawner',
+                to: '/docs/spawner',
+              },
+              {
+                label: 'Auto Speccer',
+                to: '/docs/autospec/introduction',
               },
             ],
           },

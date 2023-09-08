@@ -29,6 +29,16 @@ const sidebars = {
       ],
     },
   ],
+  autospec: [
+    'autospec/introduction',
+    {
+      type: 'category',
+      label: 'Specifications',
+      items : [
+        'autospec/specifications',
+      ],
+    },
+  ],
 };
 
 module.exports = sidebars;
