@@ -92,6 +92,11 @@ const config = {
                 label: 'Auto Speccer',
                 sidebarId: 'autospec',
               },
+              {
+                type: 'docSidebar',
+                label: 'Routes System',
+                sidebarId: 'routesystem',
+              },
             ]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
@@ -120,6 +125,10 @@ const config = {
               {
                 label: 'Auto Speccer',
                 to: '/docs/autospec/introduction',
+              },
+              {
+                label: 'Routes System',
+                to: '/docs/routesystem/introduction',
               },
             ],
           },

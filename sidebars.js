@@ -39,6 +39,16 @@ const sidebars = {
       ],
     },
   ],
+  routesystem: [
+    'routesystem/introduction',
+    {
+      type: 'category',
+      label: 'Details',
+      items : [
+        'routesystem/details',
+      ],
+    },
+  ],
 };
 
 module.exports = sidebars;
