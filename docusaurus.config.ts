@@ -82,7 +82,17 @@ const config: Config = {
               {
                 type: 'docSidebar',
                 label: 'Basic Spawner',
-                sidebarId: 'spawner',
+                sidebarId: 'basicspawner',
+              },
+              {
+                type: 'docSidebar',
+                label: 'Pro Spawner',
+                sidebarId: 'prospawner',
+              },
+              {
+                type: 'docSidebar',
+                label: 'Advanced Spawner',
+                sidebarId: 'advancedspawner',
               },
               {
                 type: 'docSidebar',
@@ -117,7 +127,7 @@ const config: Config = {
           items: [
             {
               label: 'Bus Spawner',
-              to: '/docs/spawner',
+              to: '/docs/basicspawner',
             },
             {
               label: 'Auto Speccer',
@@ -156,7 +166,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} GTS ASSETS.`,
     },
     prism: {
       theme: prismThemes.github,

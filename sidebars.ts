@@ -29,14 +29,33 @@ const sidebars: SidebarsConfig = {
   ],
    */
 
-  spawner: [
-    'spawner/index',
+  basicspawner: [
+    'basicspawner/index',
     {
       type: 'category',
       label: 'Setup',
       items: [
-        'spawner/addingbuses',
-        'spawner/configuration'
+        'basicspawner/index'
+      ],
+    },
+  ],
+  prospawner: [
+    'prospawner/index',
+    {
+      type: 'category',
+      label: 'Setup',
+      items: [
+        'prospawner/index'
+      ],
+    },
+  ],
+  advancedspawner: [
+    'advancedspawner/index',
+    {
+      type: 'category',
+      label: 'Setup',
+      items: [
+        'advancedspawner/index'
       ],
     },
   ],
