@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgts_docs_new=self.webpackChunkgts_docs_new||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Introducing GTS Auto Speccer - Simplifying ROBLOX Bus Speccing","permalink":"/gts-docs/blog/GTS Auto Speccer","unlisted":false,"date":"2023-07-21T06:39:01.000Z"}]}')}}]);

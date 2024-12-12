@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgts_docs_new=self.webpackChunkgts_docs_new||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/gts-docs/blog","blogTitle":"Blog","authorsListPath":"/gts-docs/blog/authors"}')}}]);
