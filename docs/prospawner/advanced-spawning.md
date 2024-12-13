@@ -48,6 +48,14 @@ Repeat steps 2 and 3 for each bus model you have.
 
 ---
 
+### 5. Issues with Pivot
+
+If the bus is not pivoting correctly, all you have to do is reset the pivot on the bus model.
+
+![Pivot Setup](./gif-7.gif)
+
+---
+
 ## Congratulations, You Have Set Up Advanced Spawning!
 
 By following these steps, you should now have advanced spawning set up, which helps reduce lag and improves performance in your game.
