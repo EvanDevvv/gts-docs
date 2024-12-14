@@ -23,6 +23,7 @@ sidebar_position: 2
 | `modelsLocation`       | N/A                       | The location of the bus models in the hierarchy.                                               | `Instance`     | `game.ServerStorage.BusModels`     |
 | `teleportToBus`        | N/A                       | Whether players teleport to the bus upon spawning it.                                          | `Boolean`      | `true`                             |
 | `despawnOnLeave`       | N/A                       | Whether buses despawn when players leave the game.                                             | `Boolean`      | `true`                             |
+| `SpawnType`       | N/A                       | Whether the spawner will use standard or advanced spawning.                                             | `String`      | `standard`                             |
 
 ![A descriptive alt text](./gif-3.gif)
 
