@@ -3,6 +3,7 @@ sidebar_label: 'Introduction'
 title: 'Introduction'
 sidebar_position: 1
 ---
+import ReactPlayer from 'react-player'
 
 This is our **Pro Spawner**!  
 It includes spawning, despawning, different categories, gamepass categories, and an admin panel.
