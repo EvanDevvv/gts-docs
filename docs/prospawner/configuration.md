@@ -77,7 +77,7 @@ local config = {
 }
 
 return config
-
+```
 
 :::note
 Still need support? Join our [Discord Server](https://discord.gg/5k85S4KWSR) for help!.
