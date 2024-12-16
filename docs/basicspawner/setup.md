@@ -3,6 +3,7 @@ sidebar_label: 'Setup'
 title: 'Initial Setup'
 sidebar_position: 1
 ---
+import ReactPlayer from 'react-player'
 
 ## Importing the `.RBXM` File
 
@@ -35,6 +36,12 @@ This spawner supports basic spawning, meaning you must have a model for each bus
    - Check and edit the **Attributes** in the **Properties** tab.
 
 ![A descriptive alt text](./gif-2.gif)
+
+---
+
+## How to Transfer from Huxley
+
+<ReactPlayer url="https://www.youtube.com/watch?v=52kSKijLcL8" controls width="100%" height="360px" />
 
 ---
 
