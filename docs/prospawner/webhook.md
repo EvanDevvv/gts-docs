@@ -59,7 +59,7 @@ sidebar_position: 5
 
 ---
 
-```lua showLineNumbers title="Cloudflare Worker"
+```js showLineNumbers title="Cloudflare Worker"
 export default {
   async fetch(request) {
     if (request.method !== 'POST') {
