@@ -26,6 +26,11 @@ const sidebars: SidebarsConfig = {
       label: 'Configuration',
       id: 'basicspawner/configuration',
     },
+    {
+      type: 'doc',
+      label: 'Discord Webhook',
+      id: 'basicspawner/webhook',
+    },
   ],
   prospawner: [
     'prospawner/index',
@@ -48,6 +53,11 @@ const sidebars: SidebarsConfig = {
       type: 'doc',
       label: 'Advanced Spawning',
       id: 'prospawner/advanced-spawning',
+    },
+    {
+      type: 'doc',
+      label: 'Discord Webhook',
+      id: 'basicspawner/webhook',
     },
   ],
   advancedspawner: [
