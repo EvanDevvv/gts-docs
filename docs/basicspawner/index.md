@@ -6,7 +6,8 @@ sidebar_position: 1
 import ReactPlayer from 'react-player'
 
 Welcome to the **Basic Spawner**!  
-This tool includes essential features such as spawning, despawning, different categories, and gamepass categories.
+
+This spawner consists of simple spawning, assigned buses, category locking via Clothing, Group Rank, Roblox Premium, or Gamepass.
 
 Compatible with **GenX**, **Huxley**, and even cars (if desired).  
 

@@ -15,7 +15,7 @@ import ReactPlayer from 'react-player'
 
 ---
 
-## Adding Buses to the Basic Spawner
+## Adding Buses to the Pro Spawner
 
 This spawner supports basic spawning and advanced spawning, to see the differences and how to set advanced spawning up, head to Advanced Spawning on the side. If you don't want to use advanced spawning, just follow the instructions below.
 
@@ -51,14 +51,14 @@ Below is a table explaining the key attributes for bus configurations:
 
 | Name           | Type       | Description                                                                                      |
 |----------------|------------|--------------------------------------------------------------------------------------------------|
-| `AssignedDriver` | `String`   | The Roblox User ID of the player assigned to the bus.                                           |
-| `Available`      | `BoolValue`| Indicates if the bus is available. Automatically managed; do not modify manually.               |
-| `CurrentDriver`  | `String`   | Tracks the current driver of the bus. Automatically managed; do not modify manually.            |
-| `Description`    | `String`   | Not currently used but will be added in a future update.                                        |
-| `Image`          | `Number`   | The Asset ID of the image for the bus.                                                          |
-| `ModelName`      | `String`   | The name of your bus model (e.g., `2025 IC CE`).                                                |
-| `Servicing`      | `BoolValue`| Indicates if the bus is in service. If `false`, it will not appear in the spawner.               |
-| `Type`           | `String`   | The type of bus (e.g., `SPARE`, `Type FE`). Defaults to `STANDARD` if left blank.               |
+| `AssignedDriver` | `Number`   | The Roblox User ID of the player assigned to the bus.                                          |
+| `Available`      | `BoolValue`| Indicates if the bus is available. Automatically managed; do not modify manually.              |
+| `CurrentDriver`  | `String`   | Tracks the current driver of the bus. Automatically managed; do not modify manually.           |
+| `Description`    | `String`   | Not currently used but will be added in a future update.                                       |
+| `Image`          | `Number`   | The Asset ID of the image for the bus.                                                         |
+| `ModelName`      | `String`   | The name of your bus model (e.g., `2025 IC CE`).                                               |
+| `Servicing`      | `BoolValue`| Indicates if the bus is in service. If `false`, it will not appear in the spawner.             |
+| `Spare`           | `BoolValue`   | Indicates if teh bus is a spare or not.                                                    |
 
 ---
 

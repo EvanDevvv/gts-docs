@@ -57,17 +57,35 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       label: 'Discord Webhook',
-      id: 'basicspawner/webhook',
+      id: 'prospawner/webhook',
     },
   ],
   advancedspawner: [
     'advancedspawner/index',
     {
-      type: 'category',
+      type: 'doc',
       label: 'Setup',
-      items: [
-        'advancedspawner/index'
-      ],
+      id: 'advancedspawner/setup',
+    },
+    {
+      type: 'doc',
+      label: 'Configuration',
+      id: 'advancedspawner/configuration',
+    },
+    {
+      type: 'doc',
+      label: 'Admin Setup',
+      id: 'advancedspawner/admin-setup',
+    },
+    {
+      type: 'doc',
+      label: 'Advanced Spawning',
+      id: 'advancedspawner/advanced-spawning',
+    },
+    {
+      type: 'doc',
+      label: 'Discord Webhook',
+      id: 'advancedspawner/webhook',
     },
   ],
   autospec: [

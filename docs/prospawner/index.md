@@ -6,7 +6,10 @@ sidebar_position: 1
 import ReactPlayer from 'react-player'
 
 This is our **Pro Spawner**!  
-It includes spawning, despawning, different categories, gamepass categories, and an admin panel.
+
+This spawner consists of basic and advanced spawning, assigned buses, category locking via Clothing, Group Rank, Roblox Premium, or Gamepass.
+
+This version does come with an admin panel, which can be group locked. The admin panel consists of server announcements, global announcements, despawning buses, and refueling buses. This version also comes with webhook logging so you can see when a user spawns a bus, despawns a bus, and when an admin runs any of the commands on the panel.
 
 Compatible with **GenX**, **Huxley**, and even cars! *(Note: The admin panel might break when used with cars.)*
 

@@ -52,10 +52,8 @@ sidebar_position: 5
    - In the Cloudflare Worker dashboard, after saving the code, click on the **Deploy** button.
    - Cloudflare will give you a **subdomain** under `workers.dev` where your worker can be accessed. This is the endpoint you’ll use to interact with your worker (e.g., `https://your-worker-subdomain.workers.dev/`).
 
-## 6. **Monitor Your Worker**
-   Cloudflare provides monitoring tools that let you track requests and see any errors that may occur. To access the logs:
-   - Go to the **Workers** tab in the Cloudflare dashboard.
-   - Click on your deployed worker and view the **Logs** section for request logs and error messages.
+## 6. **Enable Your Worker**
+   Replace the workers URL in your SpawnerConfig to the workers.dev link that Cloudflare gave you.
 
 ---
 
@@ -158,73 +156,15 @@ export default {
             inline: false
           }
         ];
-      } else if (messageType === 'refuelbus') {
-        description = `An admin command has been ran!`;
-        fields = [
-          {
-            name: "Bus Number",
-            value: busNumber,
-            inline: true
-          },
-          {
-            name: "Refueled By",
-            value: `${username} (@${userTag})`,
-            inline: true
-          },
-          {
-            name: "Server Type",
-            value: serverType,
-            inline: true
-          },
-          {
-            name: "Users Group Role",
-            value: groupRole,
-            inline: true
-          },
-          {
-            name: "Refueled At",
-            value: `<t:${currentTimestamp}:F>\n<t:${currentTimestamp}:R>`,
-            inline: false
-          }
-        ];
       } else if (messageType === 'globalAnnouncement') {
-        description = `An admin command has been ran!`;
-        fields = [
-          {
-            name: "Global Announcement",
-            value: serverMessage,
-            inline: true
-          },
-          {
-            name: "Server Type",
-            value: serverType,
-            inline: true
-          },
-          {
-            name: "Users Group Role",
-            value: groupRole,
-            inline: true
-          },
-          {
-            name: "Announced By",
-            value: `${username} (@${userTag})`,
-            inline: true
-          },
-          {
-            name: "Announced At",
-            value: `<t:${currentTimestamp}:F>\n<t:${currentTimestamp}:R>`,
-            inline: false
-          }
-        ];
-        } else if (messageType === 'serverAnnouncement') {
-          description = `An admin command has been ran!`;
+          description = `A global announcement has been made!`;
           fields = [
             {
-              name: "Server Announcement",
+              name: "Global Announcement",
               value: serverMessage,
               inline: true
             },
-            {
+           {
               name: "Server Type",
               value: serverType,
               inline: true
@@ -245,7 +185,65 @@ export default {
               inline: false
             }
           ];
-        }  else {
+      } else if (messageType === 'serverAnnouncement') {
+          description = `A server announcement has been made!`;
+          fields = [
+            {
+              name: "Server Announcement",
+              value: serverMessage,
+              inline: true
+            },
+           {
+              name: "Server Type",
+              value: serverType,
+              inline: true
+            },
+            {
+              name: "Users Group Role",
+              value: groupRole,
+              inline: true
+            },
+            {
+              name: "Announced By",
+              value: `${username} (@${userTag})`,
+              inline: true
+            },
+            {
+              name: "Announced At",
+              value: `<t:${currentTimestamp}:F>\n<t:${currentTimestamp}:R>`,
+              inline: false
+            }
+          ];
+          } else if (messageType === 'refuelbus') {
+          description = `A bus has been refueled by an admin!`;
+          fields = [
+            {
+              name: "Bus Number",
+              value: busNumber,
+              inline: true
+            },
+           {
+              name: "Server Type",
+              value: serverType,
+              inline: true
+            },
+            {
+              name: "Users Group Role",
+              value: groupRole,
+              inline: true
+            },
+            {
+              name: "Refueled By",
+              value: `${username} (@${userTag})`,
+              inline: true
+            },
+            {
+              name: "Refueled At",
+              value: `<t:${currentTimestamp}:F>\n<t:${currentTimestamp}:R>`,
+              inline: false
+            }
+          ];
+      }  else {
         return new Response(
           JSON.stringify({ error: `Unsupported messageType: ${messageType}` }),
           { status: 400, headers: { 'Content-Type': 'application/json' } }
@@ -259,7 +257,7 @@ export default {
         case 'refuelbus':
           colorCode = 0x0000ff; // Blue for refuelbus
             break;
-        case 'despawnPlayersBus':
+        case 'despawnplayersbus':
           colorCode = 0xffff00; // Yellow for despawnplayersbus
             break;
         case 'serverAnnouncement':
