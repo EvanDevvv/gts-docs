@@ -36,49 +36,46 @@ sidebar_position: 2
 
 ### Config Example (As Lua Code)
 
-```lua showLineNumbers title="SpawnerSettings"
-local config = {
+```js showLineNumbers title="SpawnerSettings"
+--!strict 
+local Types = require(game:GetService("ReplicatedStorage"):WaitForChild("Spawner").ExternalModules.Types);
 
-    theme = {
-        title = "GTS Assets Spawner",
-        logo = 13970392854,
-    },
+local config: Types.Config = {
+	theme = {
+		title = "GTS Assets Spawner",
+		logo = 13970392854,
+	},
 
-    categories = {
-        Category1 = {
-            name = "Standard 1 Free",
-            categoryType = "free",
-            layoutOrder = 1,
-        },
-        Category2 = {
-            name = "Standard 2 Free",
-            categoryType = "free",
-            layoutOrder = 2,
-        },
-        Category3 = {
-            name = "Standard 3 Paid",
-            categoryType = "gamepass",
-            gamepassId = 13600173502,
-            layoutOrder = 3,
-        },
-        Category4 = {
-            name = "Standard 4 Paid",
-            categoryType = "gamepass",
-            gamepassId = 13600173502,
-            layoutOrder = 4,
-        },
-    },
+	categories = {
+		Category1 = {
+			name = "Standard",
+			categoryType = "free",
+			layoutOrder = 1,
+		},
+	},	
 
-    groupSettings = {
-        enabled = false,
-        groupId = 16838109,
-        minimumSpawnRank = 1,
-        minimumAdminRank = 8,
-    },
+	groupSettings = {
+		enabled = false,
+		groupId = 3395411,
+		minimumSpawnRank = 1,
+		minimumAdminRank = 255,
+	},
 
-    modelsLocation = game.ServerStorage.BusModels,
-    teleportToBus = true,
-    despawnOnLeave = true,
+	webhookSettings = {
+		enabled = false,
+		workersURL = "https://my-worker-url.workers.dev/",
+	},
+	
+	CosmeticSettings = {
+		gamepassLocked = false,
+		gamepassId = 000000
+	},
+
+	modelsLocation = game.ServerStorage.BusModels,
+	teleportToBus = true,
+	despawnOnLeave = true,
+	SpawnType = "basic", 
+	TeleportType = "block"
 }
 
 return config

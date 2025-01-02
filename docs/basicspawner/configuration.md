@@ -31,50 +31,34 @@ sidebar_position: 2
 
 ### Config Example (As Lua Code)
 
-```lua showLineNumbers title="SpawnerSettings"
---!strict
-local config = {
+```js showLineNumbers title="SpawnerSettings"
+--!strict 
+local Types = require(game:GetService("ReplicatedStorage"):WaitForChild("Spawner").ExternalModules.Types);
 
-    theme = {
-        title = "GTS Assets Spawner",
-        logo = 13970392854,
-    },
+local config: Types.Config = {
+	theme = {
+		title = "GTS Assets Spawner",
+		logo = 13970392854,
+	},
 
-    categories = {
-        Category1 = {
-            name = "Standard",
-            categoryType = "free",
-            layoutOrder = 1,
-        },
-        Category2 = {
-            name = "Gamepass Buses",
-            categoryType = "gamepass",
-            assetId = 13600173502,
-            layoutOrder = 2,
-        },
-        Category3 = {
-            name = "Group Buses",
-            categoryType = "groupRank",
-            groupRank = 255,
-            layoutOrder = 3,
-        },
-        Category4 = {
-            name = "Premium Locked Buses",
-            categoryType = "premium",
-            layoutOrder = 4,
-        },
-    },
+	categories = {
+		Category1 = {
+			name = "Standard",
+			categoryType = "free",
+			layoutOrder = 1,
+		},
+	},	
 
-    groupSettings = {
-        enabled = false,
-        groupId = 3395411,
-        minimumSpawnRank = 1,
-    },
+	groupSettings = {
+		enabled = false,
+		groupId = 3395411,
+		minimumSpawnRank = 1,
+	},
 
-    modelsLocation = game.ServerStorage.BusModels,
-    teleportToBus = true,
-    despawnOnLeave = true,
-    TeleportType = "block",
+	modelsLocation = game.ServerStorage.BusModels,
+	teleportToBus = true,
+	despawnOnLeave = true,
+	TeleportType = "block"
 }
 
 return config
