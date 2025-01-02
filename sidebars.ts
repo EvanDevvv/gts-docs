@@ -82,6 +82,11 @@ const sidebars: SidebarsConfig = {
       label: 'Discord Webhook',
       id: 'advancedspawner/webhook',
     },
+    {
+      type: 'doc',
+      label: 'Cosmetics Setup',
+      id: 'advancedspawner/cosmetics-setup',
+    },
   ],
   autospec: [
     'autospec/introduction',
