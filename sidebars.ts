@@ -26,11 +26,6 @@ const sidebars: SidebarsConfig = {
       label: 'Configuration',
       id: 'basicspawner/configuration',
     },
-    {
-      type: 'doc',
-      label: 'Discord Webhook',
-      id: 'basicspawner/webhook',
-    },
   ],
   prospawner: [
     'prospawner/index',
