@@ -4,6 +4,9 @@ title: 'How to Setup Discord Webhook'
 sidebar_position: 5
 ---
 
+import ReactPlayer from 'react-player'
+
+<ReactPlayer url="https://www.youtube.com/watch?v=OcrnkINzT_s" controls width="100%" height="360px" />
 
 ---
 

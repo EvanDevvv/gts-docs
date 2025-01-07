@@ -18,7 +18,7 @@ Compatible with **GenX**, **Huxley**, and even cars! *(Note: The admin panel mig
 ---
 
 ### Video Tutorial  
-<ReactPlayer url="https://www.youtube.com/watch?v=NNNVoyHx5e0" controls width="100%" height="360px" />
+<ReactPlayer url="https://www.youtube.com/watch?v=o0h3hEK1wXc" controls width="100%" height="360px" />
 
 :::note  
 Need additional help? Join our [Discord Server](https://discord.gg/5k85S4KWSR) for support!  

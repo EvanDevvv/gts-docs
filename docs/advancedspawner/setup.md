@@ -41,7 +41,7 @@ This spawner supports basic spawning and advanced spawning, to see the differenc
 
 ## How to Transfer from Huxley
 
-<ReactPlayer url="https://www.youtube.com/watch?v=52kSKijLcL8" controls width="100%" height="360px" />
+<ReactPlayer url="https://www.youtube.com/watch?v=2IUAqmcKeTU" controls width="100%" height="360px" />
 
 ---
 
@@ -53,13 +53,13 @@ Below is a table explaining the key attributes for bus configurations:
 |----------------|------------|--------------------------------------------------------------------------------------------------|
 | `AssignedDriver` | `Number`   | The Roblox User ID of the player assigned to the bus.                                          |
 | `Available`      | `BoolValue`| Indicates if the bus is available. Automatically managed; do not modify manually.              |
-| `Available`      | `string`| Indicates the cosmetics for this bus, follow tutorial on side on how to properly setup.           |
+| `Cosmetics`      | `string`| Indicates the cosmetics for this bus, follow tutorial on side on how to properly setup.           |
 | `CurrentDriver`  | `String`   | Tracks the current driver of the bus. Automatically managed; do not modify manually.           |
 | `Description`    | `String`   | Not currently used but will be added in a future update.                                       |
 | `Image`          | `Number`   | The Asset ID of the image for the bus.                                                         |
 | `ModelName`      | `String`   | The name of your bus model (e.g., `2025 IC CE`).                                               |
 | `Servicing`      | `BoolValue`| Indicates if the bus is in service. If `false`, it will not appear in the spawner.             |
-| `Spare`           | `BoolValue`   | Indicates if teh bus is a spare or not.                                                    |
+| `Spare`           | `BoolValue`   | Indicates if the bus is a spare or not.                                                    |
 
 ---
 
